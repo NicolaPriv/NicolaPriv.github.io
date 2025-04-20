@@ -4,27 +4,16 @@ title: About Me
 permalink: /about/
 tags: about
 flicker: true
-headshot: /images/headshot.jpg
+headshot: /images/Nicola.jpg
 ---
 
-I am a Software Engineering student at [RMIT University](https://www.rmit.edu.au/) in Melbourne. Starting November 2016 I will be interning with [Zendesk](https://www.zendesk.com/) in a Data Engineering role.
+I am an Italian musician and researcher based in Reykjavik, Iceland. My background is in jazz improvisation, electronic music and linguistics. 
 
-I'm currently doing a lot of work building developer communities around my University. I'll chase any opportunity to improve collaboration and outreach in the tech. industry.
+In my practice I like to embrace many different disciplines, with a focus on interactive technologies and AI as applied to music.
 
-My main areas of interest are in NLP, Agent-Oriented Programming, and Computational Dialectics.
+Currently I'm a researcher at the [Intelligent Instruments Lab] (https://iil.is/) where I am exploring through artistic practice how artificial intelligence is shaping our culture and social interactions.
 
-{% if site.show_talks_section %}
-## Talks
-
-- Put something here!
-{% endif %}
-
-{% if site.show_workshops_section %}
-## Workshops
-
-- Put something here!
-{% endif %}
-
+You can contact me at nprivato@hi.is
 
 <style>
 .post-header, #talks, #workshops {
