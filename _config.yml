@@ -2,9 +2,9 @@
 ## Site settings                    ##
 ######################################
 title:       NicolaPriv
-email:       jonathon.bel.melbourne@gmail.com
-author:      Jonathon Belotti
-description: "A striking black-white Jekyll theme."
+email:       nprivato@hi.is@
+author:      Nicola Privato
+description: "Musician, Researcher."
 baseurl:     ""
 url:         "https://nicolapriv.github.io"
 github_username: NicolaPriv
@@ -22,7 +22,7 @@ bing_verification:
 ######################################
 ## Optional features                ##
 ######################################
-animated:             false
+animated:             true
 show_related_posts:   false
 show_post_footers:    True
 show_social_icons:    True
@@ -54,17 +54,17 @@ facebook_comments_number: 10
 ###################################
 ## Social icons                  ##
 ###################################
-github_username: thundergolfer
+github_username: NicolaPriv
 bitbucket_username:
 stackoverflow_id:
 twitter_username: jonobelotti_io
 skype_username:
 steam_nickname:
 google_plus_id:
-linkedin_username: jonathonbelotti
+linkedin_username:
 angellist_username:
 medium_id: thundergolfer
-youtube_channel_id: UCSP7fMKwmaXaZhViAV2Vgvg
+youtube_channel_id: nicola.privato
 bitcoin_url:
 paypal_url:
 flattr_button:
