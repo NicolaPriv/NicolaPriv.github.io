@@ -1,27 +1,24 @@
 ---
 layout: post-wide
 hero-bg-color: "#000"
-uid: personal-logo
-title:  "Personal Logo Concept"
+uid: Stacco
+title:  "Stacco"
 worktype: "Design"
 date:   2013-09-02 15:35:01
 categories: project
 progress: 90
 ---
 
-<h3>70 % complete</h3>
+<h3>100 % complete</h3>
 
 <p>
-	During my architecture study days, one of the silly exercises was to design our own logo. This is what I produced for the exercise, and I liked it enough to keep using it here and there.
-</p>
+Stacco is an instrument designed to perform with Neural Audio Synthesis (NAS), developed at the Intelligent Instruments Lab (IIL) together with Giacomo Lepri.
 
-<p class="meta">
-  Aren't personal logos | Date: <strong>{{ page.date | date: "%b %Y" }}</strong> | a bit pretentious?
+Stacco features four magnetic attractors placed under a board, combining permanent magnets and a three-axis magnetometer. The attractors are capable of detecting three-dimensional variations in the surrounding magnetic field. Stacco's four attractors combined allow the simultaneous control of up to twelve continuous parameters.
 </p>
 
 <div class="showcase">
-  <img style="width:50%" src="/images/portfolio/personal-logo/1.png" alt="">
-  <img style="width:50%" src="/images/portfolio/personal-logo/2.jpg" alt="">
-  <img style="width:50%" src="/images/portfolio/personal-logo/3.png" alt="">
-  <img style="width:50%" src="/images/portfolio/personal-logo/4.png" alt="">
+  <img style="width:50%" src="/images/portfolio/Stacco/Stacco1.png" alt="">
+  <img style="width:50%" src="/images/portfolio/Stacco/Stacco2.jpg" alt="">
+  
 </div>
