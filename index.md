@@ -1,11 +1,9 @@
 
 ---
-layout: about
-title: About Me
-permalink: /about/
-tags: about
-flicker: true
-headshot: /images/Nicola.jpg
+layout: about  # Keeps your about page styling
+title: Home    # Changed from "About Me" since this is now homepage
+tags: about    # Optional: keeps any tag-based styling
+flicker: true # Only include if actually used
 ---
 
 <div style="display: flex; align-items: flex-start; gap: 40px; margin-top: 20px;">
