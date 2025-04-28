@@ -1,5 +1,6 @@
+
 ---
-layout: about
+layout: home
 title: About Me
 permalink: /about/
 tags: about
