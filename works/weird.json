@@ -1,0 +1,30 @@
+{
+  "id": "weird",
+  "title": "W.E.I.R.D. Suite",
+  "category": "performance",
+  "meta": "Blackwood Gallery · Toronto 2019–2021",
+  "image": "images/full_0NFMCAwF.png",
+  "content": [
+    {
+      "type": "text",
+      "value": "W.E.I.R.D. (Western, Educated, Industrialised, Rich, Democratic) is a suite for piano solo combining data mining with generative musical notation. Tweets containing specific keywords are downloaded in real time and affect the generation of the score, drawing on Zygmunt Bauman's sociological perspective on postmodernity."
+    },
+    {
+      "type": "text",
+      "value": "The suite consists of three movements:"
+    },
+    {
+      "type": "text",
+      "value": "<strong>I. Uncertainty</strong> — Tweets trigger the creation of the composition bar by bar. Once most bars are generated, the soloist begins to play while the tweets shift the score between a finished version and a less refined one, making the score itself uncertain."
+    },
+    {
+      "type": "text",
+      "value": "<strong>II. Emergency</strong> — The focus moves to the volume of tweets containing the keyword. The density of social media activity directly shapes the musical texture."
+    },
+    {
+      "type": "text",
+      "value": "<strong>III. Identity</strong> — The longest and most articulated movement, developed after the first lockdown. The performer uses a specifically designed looper that juxtaposes the last four musical phrases as the score changes — a metaphor for how we develop our identities, combining chance, the pressure of society, and the compounding of our choices."
+    }
+  ],
+  "gallery": []
+}

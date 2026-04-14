@@ -1,0 +1,14 @@
+{
+  "id": "scramble-live",
+  "title": "Scramble Live",
+  "category": "artdesign",
+  "meta": "With Omar Rampado · SMC 2023 · Stockholm",
+  "image": "images/full_j8Mh0wyq.jpg",
+  "content": [
+    {
+      "type": "text",
+      "value": "Complementary tool for Scramble. Runs trained models with higher interactive capabilities such as real-time analysis of direct MIDI input."
+    }
+  ],
+  "gallery": []
+}

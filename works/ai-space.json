@@ -1,0 +1,21 @@
+{
+  "id": "ai-space",
+  "title": "Studies on AI, Sound and Space",
+  "category": "performance",
+  "meta": "Ars Electronica 2024 · Linz",
+  "image": "images/full_yI2Fy14j.jpg",
+  "content": [
+    {
+      "type": "text",
+      "value": "Practice-based research using the Dodekaotto — a 20+1 speaker dodecahedron — exploring how AI models' internal representations find correspondence in physical space."
+    }
+  ],
+  "gallery": [
+    "images/full_OoPpe7wN.jpg",
+    "images/full_tEXGK1qR.jpg",
+    "images/full_FKPjRonl.jpg",
+    "images/full_fefZEnVH.jpg",
+    "images/full_d2I6OkqI.jpg",
+    "images/full_1epvMSTd.jpg"
+  ]
+}

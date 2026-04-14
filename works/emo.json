@@ -1,0 +1,14 @@
+{
+  "id": "emo",
+  "title": "Emo",
+  "category": "artdesign",
+  "meta": "Altre Parole Foundation · Padova 2022",
+  "image": "images/full_gz5zN37K.jpeg",
+  "content": [
+    {
+      "type": "text",
+      "value": "Emo is a graphic score controlled by an AI algorithm for emotion recognition, developed for a workshop with oncologic patients. The system analyses text, weights and represents each of the five basic emotions, producing an ever-shifting graphic score."
+    }
+  ],
+  "gallery": []
+}

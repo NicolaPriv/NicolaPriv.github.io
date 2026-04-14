@@ -1,0 +1,19 @@
+{
+  "id": "contingent",
+  "title": "Contingent Snapshot",
+  "category": "performance",
+  "meta": "With Wolfgang Dorninger · Linz 2023",
+  "image": "images/full_YyN6EFN1.png",
+  "content": [
+    {
+      "type": "text",
+      "value": "A performance duo with Wolfgang Dorninger, recorded in Linz and broadcasted as part of an 8-hour music marathon organised by Francesco Zedde and Eugenia Seriakov."
+    },
+    {
+      "type": "video",
+      "platform": "vimeo",
+      "videoId": "868215682"
+    }
+  ],
+  "gallery": []
+}

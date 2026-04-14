@@ -1,0 +1,14 @@
+{
+  "id": "scramble",
+  "title": "Scramble",
+  "category": "artdesign",
+  "meta": "With Omar Rampado · EvoMusArt 2022",
+  "image": "images/full_43oiSRhz.jpg",
+  "content": [
+    {
+      "type": "text",
+      "value": "ML software for real-time music generation from MIDI, combining LSTM Networks and Markov Chains."
+    }
+  ],
+  "gallery": []
+}

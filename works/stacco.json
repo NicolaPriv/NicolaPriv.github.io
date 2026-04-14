@@ -1,0 +1,30 @@
+{
+  "id": "stacco",
+  "title": "Stacco",
+  "category": "artdesign",
+  "meta": "AI Musical Instrument · TENOR & NIME 2024",
+  "image": "images/full_XL5EMUGy.jpg",
+  "content": [
+    {
+      "type": "text",
+      "value": "Stacco is an AI musical instrument designed to perform with Neural Audio Synthesis. The performer interacts by throwing, displacing and combining magnetic marbles and ferromagnetic objects onto its board."
+    },
+    {
+      "type": "text",
+      "value": "Stacco embeds the score onto the instrument itself. Tracing paper on the board lets performers sketch meaningful areas in the AI models' latent space directly on the instrument."
+    },
+    {
+      "type": "video",
+      "platform": "youtube",
+      "videoId": "AJpuVTn_tPM"
+    }
+  ],
+  "gallery": [
+    "images/full_kzvn7mGF.jpg",
+    "images/full_IXqFglGO.jpg",
+    "images/full_o2CpBZsw.jpg",
+    "images/full_LAmxPAEw.jpg",
+    "images/full_yfgFLfDk.jpg",
+    "images/full_tls2G5LI.jpg"
+  ]
+}

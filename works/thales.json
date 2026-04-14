@@ -1,0 +1,22 @@
+{
+  "id": "thales",
+  "title": "Thales",
+  "category": "artdesign",
+  "meta": "Guthman Award · Georgia Tech 2024 · NIME 2023 · Ars Electronica 2023",
+  "image": "images/full_GmevcS1g.png",
+  "content": [
+    {
+      "type": "text",
+      "value": "Two wireless controllers interacting through tangible magnetic fields. Named after Thales of Miletus, who described magnets as \"having a soul\"."
+    },
+    {
+      "type": "text",
+      "value": "Uses <a href=\"https://arxiv.org/abs/2111.05011\" target=\"_blank\">RAVE</a> trained on magnet sounds. <a href=\"https://github.com/Intelligent-Instruments-Lab/Thales\" target=\"_blank\">Build your own on GitHub</a>."
+    }
+  ],
+  "gallery": [
+    "images/full_puOhpcMq.jpg",
+    "images/full_ylvIVLOv.jpg",
+    "images/full_8G4ARR4a.jpg"
+  ]
+}

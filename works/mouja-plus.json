@@ -1,0 +1,19 @@
+{
+  "id": "mouja-plus",
+  "title": "Mouja+",
+  "category": "performance",
+  "meta": "SWRL Festival · Riga 2024",
+  "image": "images/full_LnSdkS4c.jpg",
+  "content": [
+    {
+      "type": "text",
+      "value": "Mouja+ combines real-time neural audio synthesis using Thales and Stacco with Stable Audio, prompted on stage with Fluxus text scores. Sonic textures are dynamically layered as inputs for timbre transfer."
+    }
+  ],
+  "gallery": [
+    "images/full_qH51z5Bd.jpg",
+    "images/full_fPD9dmN9.jpg",
+    "images/full_8XUlskQu.jpg",
+    "images/full_m1kVmYZK.jpg"
+  ]
+}

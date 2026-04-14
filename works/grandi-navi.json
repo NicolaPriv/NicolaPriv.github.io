@@ -1,0 +1,19 @@
+{
+  "id": "grandi-navi",
+  "title": "Grandi Navi",
+  "category": "performance",
+  "meta": "Live electronics and trombone · Venice 2021",
+  "image": "images/full_0NFMCAwF.png",
+  "content": [
+    {
+      "type": "text",
+      "value": "Improvisation with Alberto Novello, Alessandro Gambato, Mattia Pizzato. Sound projection by Julian Scordato. Pase Platform, Venice."
+    },
+    {
+      "type": "video",
+      "platform": "vimeo",
+      "videoId": "559910591"
+    }
+  ],
+  "gallery": []
+}

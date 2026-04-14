@@ -1,0 +1,14 @@
+{
+  "id": "notochord",
+  "title": "Notochord Arcs and Scrambled Signals",
+  "category": "performance",
+  "meta": "With Victor Shepardson · AIMC 2023",
+  "image": "images/full_2hYgFrtO.png",
+  "content": [
+    {
+      "type": "text",
+      "value": "Two generative MIDI models wrangled live. Notochord extrudes quasi-music filtered by Scramble before re-harmonization, ad nauseam."
+    }
+  ],
+  "gallery": []
+}
