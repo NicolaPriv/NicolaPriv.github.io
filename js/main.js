@@ -27,18 +27,18 @@ const W = [
 ];
 
 const R = [
-  {t:'Querying the Ghost: AI Hauntography in NIME',v:'NIME 2024',badge:'Best Paper',url:'https://nicolaprivato.com/uploads/s/w/c/5/wc5nvkcurxod/file/ws4R9T51.pdf',cite:'Privato, N. (2024). Querying the Ghost: AI Hauntography in NIME. Proceedings of NIME 2024.'},
-  {t:'Stacco: Exploring the Embodied Perception of Latent Representations in Neural Synthesis',v:'NIME 2024',url:'https://nicolaprivato.com/uploads/s/w/c/5/wc5nvkcurxod/file/IQ8kf7lp.pdf',cite:'Privato, N. & Lepri, G. (2024). Stacco: Exploring the Embodied Perception of Latent Representations in Neural Synthesis. Proceedings of NIME 2024.'},
-  {t:'AI Hauntology and the Hauntographic Method',v:'xCoAx 2024',url:'https://nicolaprivato.com/uploads/s/w/c/5/wc5nvkcurxod/file/KqfOY96V.pdf',cite:'Privato, N. (2024). AI Hauntology and the Hauntographic Method. Proceedings of xCoAx 2024.'},
-  {t:'Mouja',v:'xCoAx 2024',url:'https://nicolaprivato.com/uploads/s/w/c/5/wc5nvkcurxod/file/vPYCulwi.pdf',cite:'Privato, N. (2024). Mouja. Proceedings of xCoAx 2024.'},
-  {t:'Sketching Magnetic Interactions for Neural Synthesis',v:'TENOR 2024',url:'https://nicolaprivato.com/uploads/s/w/c/5/wc5nvkcurxod/file/btdMyOUI.pdf',cite:'Privato, N. & Lepri, G. (2024). Sketching Magnetic Interactions for Neural Synthesis. Proceedings of TENOR 2024.'},
-  {t:'A Context-sensitive Approach to XAI in Music Performance',v:'XAIxArts 2023',url:'https://nicolaprivato.com/uploads/s/w/c/5/wc5nvkcurxod/file/Q70BCFmK.pdf',cite:'Privato, N. (2023). A Context-sensitive Approach to XAI in Music Performance. XAIxArts Workshop 2023.'},
-  {t:'Magnetic Interactions as a Somatosensory Interface',v:'NIME 2023',url:'https://nicolaprivato.com/uploads/s/w/c/5/wc5nvkcurxod/file/2zlKJI90.pdf',cite:'Privato, N. (2023). Magnetic Interactions as a Somatosensory Interface. Proceedings of NIME 2023.'},
-  {t:'The Magnetic Score: Somatosensory Inscriptions and Relational Design',v:'TENOR 2023',url:'https://nicolaprivato.com/uploads/s/w/c/5/wc5nvkcurxod/file/yiP1XP7E.pdf',cite:'Privato, N. (2023). The Magnetic Score: Somatosensory Inscriptions and Relational Design in the Instrument-Score. Proceedings of TENOR 2023.'},
-  {t:'Scramble Live: Combining LSTM and Markov Chains',v:'SMC 2022',url:'https://nicolaprivato.com/uploads/s/w/c/5/wc5nvkcurxod/file/zZTTogpc.pdf',cite:'Privato, N. & Rampado, O. (2022). Scramble Live: Combining LSTM and Markov Chains for Real-time Musical Interaction. Proceedings of SMC 2022.'},
-  {t:'Scramble: A Creative Tool Combining LSTM and Markov Chains in Max',v:'EvoMUSART 2022',url:'https://nicolaprivato.com/uploads/s/w/c/5/wc5nvkcurxod/file/SWGRA7j4.pdf',cite:'Privato, N. & Rampado, O. (2022). Scramble: A Creative Tool for the Musician Combining LSTM and Markov Chains in Max. EvoMUSART 2022.'},
-  {t:'W.E.I.R.D. Enters the Stage',v:'xCoAx 2021',url:'https://nicolaprivato.com/uploads/s/w/c/5/wc5nvkcurxod/file/egG5IeGb.pdf',cite:'Privato, N. (2021). W.E.I.R.D. Enters the Stage. Proceedings of xCoAx 2021.'},
-  {t:'Sketching Sonic Trajectories',v:'SMC 2021',url:'https://nicolaprivato.com/uploads/s/w/c/5/wc5nvkcurxod/file/uczU4Sxk.pdf',cite:'Privato, N. (2021). Sketching Sonic Trajectories: A IanniX Tool for Composing the Electroacoustic Space. Proceedings of SMC 2021.'}
+  {t:'Querying the Ghost: AI Hauntography in NIME',v:'NIME 2024',badge:'Best Paper',url:'papers/ws4R9T51.pdf',cite:'Privato, N. (2024). Querying the Ghost: AI Hauntography in NIME. Proceedings of NIME 2024.'},
+  {t:'Stacco: Exploring the Embodied Perception of Latent Representations in Neural Synthesis',v:'NIME 2024',url:'papers/IQ8kf7lp.pdf',cite:'Privato, N. & Lepri, G. (2024). Stacco: Exploring the Embodied Perception of Latent Representations in Neural Synthesis. Proceedings of NIME 2024.'},
+  {t:'AI Hauntology and the Hauntographic Method',v:'xCoAx 2024',url:'papers/KqfOY96V.pdf',cite:'Privato, N. (2024). AI Hauntology and the Hauntographic Method. Proceedings of xCoAx 2024.'},
+  {t:'Mouja',v:'xCoAx 2024',url:'papers/vPYCulwi.pdf',cite:'Privato, N. (2024). Mouja. Proceedings of xCoAx 2024.'},
+  {t:'Sketching Magnetic Interactions for Neural Synthesis',v:'TENOR 2024',url:'papers/btdMyOUI.pdf',cite:'Privato, N. & Lepri, G. (2024). Sketching Magnetic Interactions for Neural Synthesis. Proceedings of TENOR 2024.'},
+  {t:'A Context-sensitive Approach to XAI in Music Performance',v:'XAIxArts 2023',url:'papers/Q70BCFmK.pdf',cite:'Privato, N. (2023). A Context-sensitive Approach to XAI in Music Performance. XAIxArts Workshop 2023.'},
+  {t:'Magnetic Interactions as a Somatosensory Interface',v:'NIME 2023',url:'papers/2zlKJI90.pdf',cite:'Privato, N. (2023). Magnetic Interactions as a Somatosensory Interface. Proceedings of NIME 2023.'},
+  {t:'The Magnetic Score: Somatosensory Inscriptions and Relational Design',v:'TENOR 2023',url:'papers/yiP1XP7E.pdf',cite:'Privato, N. (2023). The Magnetic Score: Somatosensory Inscriptions and Relational Design in the Instrument-Score. Proceedings of TENOR 2023.'},
+  {t:'Scramble Live: Combining LSTM and Markov Chains',v:'SMC 2022',url:'papers/zZTTogpc.pdf',cite:'Privato, N. & Rampado, O. (2022). Scramble Live: Combining LSTM and Markov Chains for Real-time Musical Interaction. Proceedings of SMC 2022.'},
+  {t:'Scramble: A Creative Tool Combining LSTM and Markov Chains in Max',v:'EvoMUSART 2022',url:'papers/SWGRA7j4.pdf',cite:'Privato, N. & Rampado, O. (2022). Scramble: A Creative Tool for the Musician Combining LSTM and Markov Chains in Max. EvoMUSART 2022.'},
+  {t:'W.E.I.R.D. Enters the Stage',v:'xCoAx 2021',url:'papers/egG5IeGb.pdf',cite:'Privato, N. (2021). W.E.I.R.D. Enters the Stage. Proceedings of xCoAx 2021.'},
+  {t:'Sketching Sonic Trajectories',v:'SMC 2021',url:'papers/uczU4Sxk.pdf',cite:'Privato, N. (2021). Sketching Sonic Trajectories: A IanniX Tool for Composing the Electroacoustic Space. Proceedings of SMC 2021.'}
 ];
 
 function mkCard(w) {
