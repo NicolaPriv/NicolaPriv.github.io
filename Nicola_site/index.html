@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nicola Privato</title>
+<meta name="description" content="Nicola Privato — Composer, performer, researcher.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Karla:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff;--text:#222;--text-mid:#555;--text-light:#999;--accent:#d63031;--border:#e8e8e8;--head:'Outfit',system-ui,sans-serif;--sans:'Karla',system-ui,sans-serif}
+*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}body{font-family:var(--sans);background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
+header{border-bottom:1px solid var(--border);background:#fff;position:sticky;top:0;z-index:100}
+.hi{max-width:1200px;margin:0 auto;padding:1.1rem 2rem;display:flex;justify-content:space-between;align-items:center}
+.logo{font-family:var(--head);font-size:1.15rem;font-weight:300;letter-spacing:.01em}
+nav{display:flex;gap:1.5rem;align-items:center}nav a{font-size:.82rem;font-weight:500;color:var(--text-light);transition:color .2s}nav a:hover,nav a.active{color:var(--text)}
+.mb{display:none;background:none;border:none;font-size:1.4rem;cursor:pointer;color:var(--text)}
+.hero{text-align:center;padding:5rem 2rem 3.5rem;max-width:700px;margin:0 auto}
+.hero h1{font-family:var(--head);font-size:2.8rem;font-weight:300;margin-bottom:.8rem;line-height:1.15}.hero p{font-size:1.02rem;color:var(--text-mid);line-height:1.6}
+.portfolio{max-width:1200px;margin:0 auto;padding:0 1rem 4rem}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:0}
+.card{position:relative;overflow:hidden;aspect-ratio:2/1;cursor:pointer}.card img{width:100%;height:100%;object-fit:cover;transition:transform .45s ease,filter .35s}.card:hover img{transform:scale(1.04);filter:brightness(.85)}
+.card .ov{position:absolute;inset:0;background:rgba(0,0,0,.55);opacity:0;transition:opacity .3s;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:1.5rem}.card:hover .ov{opacity:1}
+.ov h3{font-family:var(--head);font-size:1.3rem;font-weight:400;color:#fff;margin-bottom:.3rem}.ov .wt{font-size:.75rem;color:rgba(255,255,255,.7);font-weight:300;letter-spacing:.03em}
+.page{display:none}.page.active{display:block}
+.dt{max-width:900px;margin:0 auto;padding:5rem 2rem 4rem}
+.dt .bk{display:inline-block;font-size:.8rem;font-weight:600;color:var(--text-light);text-transform:uppercase;letter-spacing:.06em;margin-bottom:2rem;transition:color .2s}.dt .bk:hover{color:var(--accent)}
+.dt .hi2{width:100%;border-radius:3px;margin-bottom:2.5rem}
+.dt h2{font-family:var(--head);font-size:2.2rem;font-weight:300;margin-bottom:.6rem;line-height:1.2}
+.dt .mt{font-size:.85rem;color:var(--text-light);margin-bottom:2rem;line-height:1.6}
+.dt .bd{font-size:1rem;line-height:1.8;color:var(--text-mid);margin-bottom:2.5rem}.dt .bd p{margin-bottom:1.2rem}.dt .bd a{color:var(--accent)}
+.dt .gal{display:grid;grid-template-columns:repeat(3,1fr);gap:.6rem;margin-bottom:2rem}
+.dt .gal img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:2px;cursor:pointer;transition:opacity .2s}.dt .gal img:hover{opacity:.8}
+.sc{max-width:1000px;margin:0 auto;padding:4rem 2rem}.sc h2{font-family:var(--head);font-size:2.2rem;font-weight:300;margin-bottom:.5rem}.sc .rl{height:1px;background:var(--border);margin-bottom:2.5rem}
+.ri{padding:1rem 0;border-bottom:1px solid var(--border)}.ri:first-child{border-top:1px solid var(--border)}
+.ri-top{display:flex;justify-content:space-between;align-items:center;gap:1.5rem}
+.ri h4{font-family:var(--head);font-size:.95rem;font-weight:400;line-height:1.4}.rv{font-size:.75rem;color:var(--text-light);margin-top:.15rem}
+.rb{font-size:.6rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);border:1px solid var(--accent);padding:.15rem .45rem;border-radius:2px;margin-left:.5rem}
+.rd{font-size:.75rem;font-weight:600;color:var(--text-light);text-transform:uppercase;letter-spacing:.04em;white-space:nowrap;transition:color .2s}.rd:hover{color:var(--accent)}
+.ri-cite{font-size:.75rem;color:var(--text-light);line-height:1.5;margin-top:.5rem;padding:.5rem .7rem;background:#f7f7f5;border-radius:3px;font-family:var(--sans);cursor:pointer;position:relative;transition:background .2s}
+.ri-cite:hover{background:#eee}
+.ri-cite::after{content:'copy';position:absolute;right:.7rem;top:.5rem;font-size:.6rem;text-transform:uppercase;letter-spacing:.06em;font-weight:600;color:var(--text-light)}
+.sg{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
+.sk{border:1px solid var(--border);border-radius:4px;padding:2rem;transition:border-color .2s}.sk:hover{border-color:var(--accent)}
+.sk h4{font-family:var(--head);font-size:1.15rem;font-weight:400;margin-bottom:.8rem}.sk p{font-size:.88rem;color:var(--text-mid);line-height:1.65;margin-bottom:1.2rem}
+.btn{display:inline-block;font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;padding:.55rem 1.3rem;border:1.5px solid var(--text);color:var(--text);transition:all .2s}.btn:hover{background:var(--text);color:#fff}
+.wi{padding:1.5rem 0;border-bottom:1px solid var(--border);display:grid;grid-template-columns:140px 1fr;gap:1.5rem}.wi:first-child{border-top:1px solid var(--border)}
+.wd{font-size:.78rem;color:var(--text-light);font-weight:500;padding-top:.2rem}
+.wi h4{font-family:var(--head);font-size:1rem;font-weight:400;margin-bottom:.2rem}.wv{font-size:.78rem;color:var(--accent);margin-bottom:.5rem}.wi p{font-size:.88rem;color:var(--text-mid);line-height:1.6;max-width:700px}
+.cb{font-size:1rem;color:var(--text-mid);line-height:1.8;max-width:600px}.cb a{color:var(--accent);font-weight:500}.cb a:hover{text-decoration:underline}
+.about-img{max-width:350px;border-radius:4px;margin-bottom:2rem}
+.gh-links{margin-top:2.5rem;display:flex;gap:2rem;font-size:.9rem}
+.gh-links a{color:var(--accent);font-weight:500;transition:opacity .2s}.gh-links a:hover{opacity:.7}
+footer{border-top:1px solid var(--border);padding:2rem;text-align:center;font-size:.75rem;color:var(--text-light)}
+.lb{display:none;position:fixed;inset:0;z-index:500;background:rgba(0,0,0,.9);justify-content:center;align-items:center;cursor:zoom-out}.lb.open{display:flex}.lb img{max-width:90vw;max-height:90vh;object-fit:contain}
+@media(max-width:768px){nav{display:none}nav.open{display:flex;flex-direction:column;position:fixed;inset:0;background:rgba(255,255,255,.98);z-index:200;justify-content:center;align-items:center;gap:2rem}nav.open a{font-size:1.3rem;color:var(--text)}.mb{display:block;z-index:201}.grid{grid-template-columns:1fr}.card{aspect-ratio:16/9}.sg{grid-template-columns:1fr}.wi{grid-template-columns:1fr;gap:.3rem}.dt .gal{grid-template-columns:1fr 1fr}.ri-top{flex-direction:column;align-items:flex-start;gap:.3rem}.hi{padding:1rem 1.2rem}.hero{padding:3.5rem 1.5rem 2.5rem}.portfolio{padding:0 0 3rem}.sc,.dt{padding-left:1.5rem;padding-right:1.5rem}}
+.fi{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}.fi.vis{opacity:1;transform:none}
+</style>
+</head>
+<body>
+<header><div class="hi">
+<a href="#" class="logo" onclick="goNav('home');return false">Nicola Privato</a>
+<button class="mb" onclick="toggleMenu()" aria-label="Menu">☰</button>
+<nav id="mn">
+  <a href="#" onclick="goNav('home');return false" class="active" id="nav-home">Works</a>
+  <a href="#" onclick="goNav('perf');return false" id="nav-perf">Performance</a>
+  <a href="#" onclick="goNav('artdesign');return false" id="nav-artdesign">Art/Design</a>
+  <a href="#" onclick="goNav('research');return false" id="nav-research">Research</a>
+  <a href="#" onclick="goNav('software');return false" id="nav-software">Software</a>
+  <a href="#" onclick="goNav('workshops');return false" id="nav-workshops">Workshops</a>
+  <a href="#" onclick="goNav('about');return false" id="nav-about">About</a>
+  <a href="#" onclick="goNav('contact');return false" id="nav-contact">Contact</a>
+</nav>
+</div></header>
+
+<div class="lb" id="lb" onclick="closeLb()"><img id="lb-img" src="" alt=""></div>
+
+<div id="page-home" class="page active">
+<div class="hero"><h1>Nicola Privato</h1><p>Composer, performer, and researcher. AI musical instruments, neural audio synthesis, and magnetic interactions — Intelligent Instruments Lab, University of Iceland.</p></div>
+<div class="portfolio"><div class="grid" id="allGrid"></div></div>
+</div>
+
+<div id="page-perf" class="page"><div class="hero"><h1>Performance</h1></div><div class="portfolio"><div class="grid" id="perfGrid"></div></div></div>
+<div id="page-artdesign" class="page"><div class="hero"><h1>Art / Design</h1></div><div class="portfolio"><div class="grid" id="artGrid"></div></div></div>
+<div id="page-detail" class="page"><div class="dt" id="dtC"></div></div>
+
+<!-- ABOUT -->
+<div id="page-about" class="page"><div class="sc">
+<h2>About</h2><div class="rl"></div>
+<img class="about-img" src="https://nicolaprivato.com/uploads/s/w/c/5/wc5nvkcurxod/img/full_YESVDNqp.jpg" alt="Nicola Privato">
+<div class="cb">
+<p>Welcome! I'm an Italian artist and researcher based in Reykjavik, Iceland.</p>
+<p>My practice embraces music performance and composition, instrument design and human-computer interaction, with a focus on interactive technologies and AI.</p>
+<p>I'm a researcher at the <a href="http://www.iil.is" target="_blank">Intelligent Instruments Lab</a>, where I explore through practice research (from electroacoustic composition, performance practice, New Interfaces for Musical Expression design) and critical theory how artificial intelligence is infiltrating discourse, culture, and society.</p>
+<p>I'm currently open to postdoctoral positions, teaching positions, and artistic collaborations.</p>
+<p>Contact: <a href="mailto:nprivato@hi.is">nprivato@hi.is</a></p>
+</div>
+</div></div>
+
+<!-- RESEARCH -->
+<div id="page-research" class="page"><div class="sc">
+<h2>Research</h2><div class="rl"></div>
+<div id="researchList"></div>
+</div></div>
+
+<!-- SOFTWARE -->
+<div id="page-software" class="page"><div class="sc">
+<h2>Software</h2><div class="rl"></div>
+<div class="sg">
+  <div class="sk"><h4>Scramble</h4><p>ML software for real-time music generation from MIDI, combining LSTM Networks and Markov Chains. Train custom models from the GUI.</p><a href="https://www.dropbox.com/sh/v869gify6pm6ta7/AAAcEjlWj-kIJ2VpyNfCWHN7a?dl=0" target="_blank" class="btn">Download</a></div>
+  <div class="sk"><h4>Scramble Live</h4><p>Complementary tool for Scramble. Runs trained models with real-time MIDI input analysis.</p><a href="https://www.dropbox.com/sh/s89nq891rtqzq8o/AAC7xQpHhIeS4u-ug-3_r3pQa?dl=0" target="_blank" class="btn">Download</a></div>
+</div>
+<div class="gh-links">
+  <a href="https://github.com/NicolaPriv" target="_blank">GitHub — Nicola Privato</a>
+  <a href="https://github.com/Intelligent-Instruments-Lab" target="_blank">GitHub — Intelligent Instruments Lab</a>
+</div>
+</div></div>
+
+<!-- WORKSHOPS -->
+<div id="page-workshops" class="page"><div class="sc">
+<h2>Workshops</h2><div class="rl"></div>
+<div class="wi"><div class="wd">Sep 2024</div><div><h4>Neural Audio Synthesis and Composition with AI</h4><div class="wv">JVLMA · Riga, Latvia</div><p>In-depth exploration of NAS techniques in contemporary music.</p></div></div>
+<div class="wi"><div class="wd">Jun 2024</div><div><h4>Everyday Objects of Musical Improvisation</h4><div class="wv">Humboldt Forum · Berlin</div><p>UdK Berlin and Oxford on pouring actions as music gestures.</p></div></div>
+<div class="wi"><div class="wd">May 2024</div><div><h4>Performance and Composition with AI</h4><div class="wv">Conservatory Pollini · Padova</div><p>Master Class with IIL instruments.</p></div></div>
+<div class="wi"><div class="wd">Apr 2024</div><div><h4>Sketching Magnetic Interactions with NAS</h4><div class="wv">ZhdK · TENOR 2024 · Zurich</div><p>With Giacomo Lepri. Neural synthesis sketches on Stacco.</p></div></div>
+<div class="wi"><div class="wd">Aug 2023</div><div><h4>Agential Instruments Design</h4><div class="wv">AIMC 2023 · Brighton</div><p>Full-day IIL workshop on AI/ML instrument design.</p></div></div>
+<div class="wi"><div class="wd">Oct 2023</div><div><h4>Stacco: Sketching Magnetic Interactions</h4><div class="wv">Fabryka Sztuky · Łódź</div><p>Participants designed and performed scores on Stacco.</p></div></div>
+<div class="wi"><div class="wd">Feb 2023</div><div><h4>Organic Intelligence</h4><div class="wv">Hallgrímskirkja · Reykjavik</div><p>With Áki Ásgeirsson. Creative AI for the organ.</p></div></div>
+<div class="wi"><div class="wd">May 2022</div><div><h4>Music Therapy with Oncologic Patients</h4><div class="wv">Altre Parole Foundation · Padova</div><p>Emotional expression through Emo, an AI graphic score.</p></div></div>
+<div class="wi"><div class="wd">2020</div><div><h4>I.R.M.A.</h4><div class="wv">With Il Portico · Mira</div><p>Integration through imaginary-to-real instrument building.</p></div></div>
+</div></div>
+
+<!-- CONTACT -->
+<div id="page-contact" class="page"><div class="sc">
+<h2>Contact</h2><div class="rl"></div>
+<div class="cb">
+  <p>Nicola Privato<br>Intelligent Instruments Lab<br>University of Iceland · Reykjavik</p>
+  <p>Email: <a href="mailto:nprivato@hi.is">nprivato@hi.is</a></p>
+  <p><a href="https://iil.is" target="_blank">Intelligent Instruments Lab</a> · <a href="https://github.com/NicolaPriv" target="_blank">GitHub</a></p>
+</div>
+</div></div>
+
+<footer>© 2026 Nicola Privato · Intelligent Instruments Lab · University of Iceland</footer>
+
+<script>
+const B='https://nicolaprivato.com/uploads/s/w/c/5/wc5nvkcurxod/img/';
+const W=[
+{id:'stacco',t:'Stacco',c:'artdesign',m:'AI Musical Instrument · TENOR & NIME 2024',img:B+'full_XL5EMUGy.jpg',bd:'<p>Stacco is an AI musical instrument designed to perform with Neural Audio Synthesis. The performer interacts by throwing, displacing and combining magnetic marbles and ferromagnetic objects onto its board.</p><p>Stacco embeds the score onto the instrument itself. Tracing paper on the board lets performers sketch meaningful areas in the AI models\u2019 latent space directly on the instrument.</p>',g:['full_kzvn7mGF','full_IXqFglGO','full_o2CpBZsw','full_LAmxPAEw','full_yfgFLfDk','full_tls2G5LI']},
+{id:'mouja-plus',t:'Mouja+',c:'performance',m:'SWRL Festival \u00b7 Riga 2024',img:B+'full_LnSdkS4c.jpg',bd:'<p>Mouja+ combines real-time neural audio synthesis using Thales and Stacco with Stable Audio, prompted on stage with Fluxus text scores. Sonic textures are dynamically layered as inputs for timbre transfer.</p>',g:['full_nCv86Zb9','full_ehk8lnLo','full_qH51z5Bd','full_fPD9dmN9','full_8XUlskQu','full_m1kVmYZK']},
+{id:'thales',t:'Thales',c:'artdesign',m:'Guthman Award \u00b7 Georgia Tech 2024 \u00b7 NIME 2023 \u00b7 Ars Electronica 2023',img:B+'full_GmevcS1g.png',bd:'<p>Two wireless controllers interacting through tangible magnetic fields. Named after Thales of Miletus, who described magnets as \u201chaving a soul\u201d.</p><p>Uses <a href="https://arxiv.org/abs/2111.05011" target="_blank">RAVE</a> trained on magnet sounds. <a href="https://github.com/Intelligent-Instruments-Lab/Thales" target="_blank">Build your own on GitHub</a>.</p>',g:['full_puOhpcMq','full_ylvIVLOv','full_nxyk4SCI','full_R0nsu1gz','full_8G4ARR4a','full_lSdaxMLk']},
+{id:'end-of-empire',t:'End of Empire',c:'artdesign',m:'With Eva Sajovic \u00b7 British Textile Biennial \u00b7 Nelson 2024',img:B+'full_cJ34MYtS.jpg',bd:'<p>Interactive textile installation reflecting on capitalism, community and technology. Four columns with speakers run different RAVE models activated by capacitive and ultrasound sensors.</p>',g:['full_GCIok1Py','full_hAjg8BVx','full_d6uE6iJl','full_9eaBSK8M','full_qJIxe1LA','full_K44I5IQa']},
+{id:'magnetologues',t:'Magnetologues',c:'performance',m:'With Giacomo Lepri \u00b7 TENOR 2024 \u00b7 Zurich',img:B+'full_OFpRBhun.png',bd:'<p>Performance for two Staccos \u2014 one runs four AI models, the other controls Ambisonics on ZhdK\u2019s 24-channel system.</p><p><a href="https://youtu.be/Bt3O-jhSqiU" target="_blank">Watch on YouTube</a></p>',g:[]},
+{id:'ai-space',t:'Studies on AI, Sound and Space',c:'performance',m:'Ars Electronica 2024 \u00b7 Linz',img:B+'full_yI2Fy14j.jpg',bd:'<p>Practice-based research using the Dodekaotto \u2014 a 20+1 speaker dodecahedron \u2014 exploring how AI models\u2019 internal representations find correspondence in physical space.</p>',g:['full_OoPpe7wN','full_tEXGK1qR','full_FKPjRonl','full_fefZEnVH','full_d2I6OkqI','full_1epvMSTd']},
+{id:'everyday',t:'Everyday Objects of Musical Improvisation',c:'artdesign',m:'Humboldt Forum \u00b7 Berlin 2024',img:B+'full_HtMjat82.jpg',bd:'<p>UdK Berlin and Oxford project on pouring actions as music performance gestures, crafting interactive sound vessels with machine learning.</p>',g:[]},
+{id:'mouja',t:'Mouja',c:'performance',m:'Fabrika Sztuki \u00b7 \u0141\u00f3d\u017a 2023',img:B+'full_RAF6CUWe.jpg',bd:'<p>A performance focusing on odd physical and temporal causalities \u2014 AI-based sonic reconfigurations where the dataset\u2019s sonic spectres are materialised through unpredictable magnetic interactions.</p>',g:[]},
+{id:'scramble',t:'Scramble',c:'artdesign',m:'With Omar Rampado \u00b7 EvoMusArt 2022',img:B+'full_43oiSRhz.jpg',bd:'<p>ML software for real-time music generation from MIDI, combining LSTM Networks and Markov Chains.</p>',g:[]},
+{id:'scramble-live',t:'Scramble Live',c:'artdesign',m:'With Omar Rampado \u00b7 SMC 2023 \u00b7 Stockholm',img:B+'full_j8Mh0wyq.jpg',bd:'<p>Complementary tool for Scramble. Runs trained models with higher interactive capabilities such as real-time analysis of direct MIDI input.</p>',g:[]},
+{id:'midisense',t:'MidiSense',c:'artdesign',m:'With Stefanos Skialivas \u00b7 IIL 2025',img:B+'full_5QQ6BlYP.jpg',bd:'<p>Five portable wifi controllers designed for Maria Arnal, with a MidiApp to interface them with any DAW.</p>',g:[]},
+{id:'magnetic-scores',t:'Magnetic Scores',c:'performance',m:'TENOR 2023 \u00b7 Boston',img:B+'full_WIb2h5wJ.jpg',bd:'<p>Combining visual inscriptions with magnetic ones \u2014 scores that can be both read and haptically experienced through magnetic interactions.</p>',g:[]},
+{id:'plantscapes',t:'Plantscapes / Knitworks',c:'artdesign',m:'With Eva Sajovic \u00b7 198 CAL \u00b7 London 2022',img:B+'full_MCH45aoK.jpg',bd:'<p>Interactive sound installation augmenting textiles with sensors. At times docile, at times unpredictable. All electronics are displayed as aesthetic elements.</p>',g:['full_X7in2NSQ','full_l6OFP5Iu','full_MCH45aoK','full_cb2E74iI']},
+{id:'sperger',t:'Johann Sperger through Time and Bass',c:'performance',m:'With BYOV \u00b7 AIMC 2023 \u00b7 Brighton',img:B+'full_2ThnD5bN.jpg',bd:'<p>With Darija Andzakovic and Natalia Duarte. We retraced Sperger\u2019s route from Trieste to Venice, recording soundscapes and using them to train and navigate a RAVE model \u2014 exploring the relationship between past and present musical technologies through a historically-informed approach.</p>',g:[]},
+{id:'contingent',t:'Contingent Snapshot',c:'performance',m:'With Wolfgang Dorninger \u00b7 Linz 2023',img:B+'full_YyN6EFN1.png',bd:'<p>A performance duo with Wolfgang Dorninger, recorded in Linz and broadcasted as part of an 8-hour music marathon organised by Francesco Zedde and Eugenia Seriakov.</p><p><a href="https://vimeo.com/868215682" target="_blank">Watch on Vimeo</a></p>',g:[]},
+{id:'notochord',t:'Notochord Arcs and Scrambled Signals',c:'performance',m:'With Victor Shepardson \u00b7 AIMC 2023',img:B+'full_2hYgFrtO.png',bd:'<p>Two generative MIDI models wrangled live. Notochord extrudes quasi-music filtered by Scramble before re-harmonization, ad nauseam.</p>',g:[]},
+{id:'oo',t:'O_o',c:'performance',m:'AI, Disklavier and human operator \u00b7 Padova 2022',img:B+'full_YyN6EFN1.png',bd:'<p>Named after an emoticon and an extinct Hawaiian bird. The last recording of its singing has been processed and multiplied by AI. Like Shelley\u2019s Creature, O_o looks for identity in its creator.</p>',g:[]},
+{id:'emo',t:'Emo',c:'artdesign',m:'Altre Parole Foundation \u00b7 Padova 2022',img:B+'full_gz5zN37K.jpeg',bd:'<p>Emo is a graphic score controlled by an AI algorithm for emotion recognition, developed for a workshop with oncologic patients. The system analyses text, weights and represents each of the five basic emotions, producing an ever-shifting graphic score.</p>',g:[]},
+{id:'weird',t:'W.E.I.R.D. Suite',c:'performance',m:'Blackwood Gallery \u00b7 Toronto 2019\u20132021',img:B+'full_0NFMCAwF.png',bd:'<p>Generative piece for piano and Twitter users. Three movements: Uncertainty, Emergency, Identity \u2014 influenced by Bauman\u2019s liquid modernity.</p>',g:[]},
+{id:'treatise',t:'Treatise',c:'performance',m:'With Arazzi Laptop Ensemble \u00b7 Venice 2021',img:B+'full_0NFMCAwF.png',bd:'<p>By Cornelius Cardew (1936\u20131981). Performed by Arazzi Laptop Ensemble at Pase Platform, Venice.</p>',g:[]},
+{id:'peregrinazioni',t:'Peregrinazioni Veneziane',c:'performance',m:'For augmented trombone and Alife \u00b7 Venice 2021',img:B+'full_0NFMCAwF.png',bd:'<p>Spatialized trombone and electronics. Improvisation over a Venetian traditional song. Grains of sound are delayed, inverted and spatialized using 16 boids controlled with an accelerometer mounted on the trombone.</p>',g:[]},
+{id:'grandi-navi',t:'Grandi Navi',c:'performance',m:'Live electronics and trombone \u00b7 Venice 2021',img:B+'full_0NFMCAwF.png',bd:'<p>Improvisation with Alberto Novello, Alessandro Gambato, Mattia Pizzato. Sound projection by Julian Scordato. Pase Platform, Venice.</p>',g:[]},
+{id:'touch',t:'Touch',c:'performance',m:'For modular synth and Twitter users \u00b7 People\u2019s Bureau 2020',img:B+'full_0NFMCAwF.png',bd:'<p>Online artistic residency during the Covid pandemic. Sound events triggered by real-time tweets containing \u201ctouch, free, fear\u201d \u2014 creating ambiguous and sometimes opposed meaning.</p>',g:[]}
+];
+
+// RESEARCH with citations
+const R=[
+{t:'Querying the Ghost: AI Hauntography in NIME',v:'NIME 2024',badge:'Best Paper',url:'https://nicolaprivato.com/uploads/s/w/c/5/wc5nvkcurxod/file/ws4R9T51.pdf',cite:'Privato, N. (2024). Querying the Ghost: AI Hauntography in NIME. Proceedings of NIME 2024.'},
+{t:'Stacco: Exploring the Embodied Perception of Latent Representations in Neural Synthesis',v:'NIME 2024',url:'https://nicolaprivato.com/uploads/s/w/c/5/wc5nvkcurxod/file/IQ8kf7lp.pdf',cite:'Privato, N. & Lepri, G. (2024). Stacco: Exploring the Embodied Perception of Latent Representations in Neural Synthesis. Proceedings of NIME 2024.'},
+{t:'AI Hauntology and the Hauntographic Method',v:'xCoAx 2024',url:'https://nicolaprivato.com/uploads/s/w/c/5/wc5nvkcurxod/file/KqfOY96V.pdf',cite:'Privato, N. (2024). AI Hauntology and the Hauntographic Method. Proceedings of xCoAx 2024.'},
+{t:'Mouja',v:'xCoAx 2024',url:'https://nicolaprivato.com/uploads/s/w/c/5/wc5nvkcurxod/file/vPYCulwi.pdf',cite:'Privato, N. (2024). Mouja. Proceedings of xCoAx 2024.'},
+{t:'Sketching Magnetic Interactions for Neural Synthesis',v:'TENOR 2024',url:'https://nicolaprivato.com/uploads/s/w/c/5/wc5nvkcurxod/file/btdMyOUI.pdf',cite:'Privato, N. & Lepri, G. (2024). Sketching Magnetic Interactions for Neural Synthesis. Proceedings of TENOR 2024.'},
+{t:'A Context-sensitive Approach to XAI in Music Performance',v:'XAIxArts 2023',url:'https://nicolaprivato.com/uploads/s/w/c/5/wc5nvkcurxod/file/Q70BCFmK.pdf',cite:'Privato, N. (2023). A Context-sensitive Approach to XAI in Music Performance. XAIxArts Workshop 2023.'},
+{t:'Magnetic Interactions as a Somatosensory Interface',v:'NIME 2023',url:'https://nicolaprivato.com/uploads/s/w/c/5/wc5nvkcurxod/file/2zlKJI90.pdf',cite:'Privato, N. (2023). Magnetic Interactions as a Somatosensory Interface. Proceedings of NIME 2023.'},
+{t:'The Magnetic Score: Somatosensory Inscriptions and Relational Design',v:'TENOR 2023',url:'https://nicolaprivato.com/uploads/s/w/c/5/wc5nvkcurxod/file/yiP1XP7E.pdf',cite:'Privato, N. (2023). The Magnetic Score: Somatosensory Inscriptions and Relational Design in the Instrument-Score. Proceedings of TENOR 2023.'},
+{t:'Scramble Live: Combining LSTM and Markov Chains',v:'SMC 2022',url:'https://nicolaprivato.com/uploads/s/w/c/5/wc5nvkcurxod/file/zZTTogpc.pdf',cite:'Privato, N. & Rampado, O. (2022). Scramble Live: Combining LSTM and Markov Chains for Real-time Musical Interaction. Proceedings of SMC 2022.'},
+{t:'Scramble: A Creative Tool Combining LSTM and Markov Chains in Max',v:'EvoMUSART 2022',url:'https://nicolaprivato.com/uploads/s/w/c/5/wc5nvkcurxod/file/SWGRA7j4.pdf',cite:'Privato, N. & Rampado, O. (2022). Scramble: A Creative Tool for the Musician Combining LSTM and Markov Chains in Max. EvoMUSART 2022.'},
+{t:'W.E.I.R.D. Enters the Stage',v:'xCoAx 2021',url:'https://nicolaprivato.com/uploads/s/w/c/5/wc5nvkcurxod/file/egG5IeGb.pdf',cite:'Privato, N. (2021). W.E.I.R.D. Enters the Stage. Proceedings of xCoAx 2021.'},
+{t:'Sketching Sonic Trajectories',v:'SMC 2021',url:'https://nicolaprivato.com/uploads/s/w/c/5/wc5nvkcurxod/file/uczU4Sxk.pdf',cite:'Privato, N. (2021). Sketching Sonic Trajectories: A IanniX Tool for Composing the Electroacoustic Space. Proceedings of SMC 2021.'}
+];
+
+function mkCard(w){const cl=w.c==='performance'?'Performance':'Art / Design';return '<a class="card fi" href="#" onclick="openD(\''+w.id+'\');return false"><img src="'+w.img+'" alt="'+w.t+'" loading="lazy"><div class="ov"><h3>'+w.t+'</h3><div class="wt">'+cl+'</div></div></a>';}
+
+function renderGrids(){
+  document.getElementById('allGrid').innerHTML=W.map(mkCard).join('');
+  document.getElementById('perfGrid').innerHTML=W.filter(w=>w.c==='performance').map(mkCard).join('');
+  document.getElementById('artGrid').innerHTML=W.filter(w=>w.c==='artdesign').map(mkCard).join('');
+  // Research
+  document.getElementById('researchList').innerHTML=R.map(r=>{
+    const badge=r.badge?(' <span class="rb">'+r.badge+'</span>'):'';
+    return '<div class="ri"><div class="ri-top"><div><h4>'+r.t+'</h4><div class="rv">'+r.v+badge+'</div></div><a href="'+r.url+'" target="_blank" class="rd">PDF \u2193</a></div><div class="ri-cite" onclick="copyCite(this)" title="Click to copy citation">'+r.cite+'</div></div>';
+  }).join('');
+  initObs();
+}
+
+function openD(id){const w=W.find(x=>x.id===id);if(!w)return;let gl='';if(w.g.length){gl='<div class="gal">'+w.g.map(f=>{const s=B+f+'.jpg';return '<img src="'+s+'" alt="" loading="lazy" onclick="openLb(\''+s+'\')">';}).join('')+'</div>';}document.getElementById('dtC').innerHTML='<a href="#" class="bk" onclick="goNav(\'home\');return false">\u2190 Back to Works</a><img class="hi2" src="'+w.img+'" alt="'+w.t+'"><h2>'+w.t+'</h2><div class="mt">'+w.m+'</div><div class="bd">'+w.bd+'</div>'+gl;showPage('detail');}
+
+function copyCite(el){navigator.clipboard.writeText(el.textContent.replace('copy','').trim());el.style.background='#e0f0e0';setTimeout(()=>{el.style.background='';},800);}
+
+function goNav(id){showPage(id);closeMenu();document.querySelectorAll('nav a').forEach(a=>a.classList.remove('active'));const el=document.getElementById('nav-'+id);if(el)el.classList.add('active');}
+function showPage(id){document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));const el=document.getElementById('page-'+id);if(el)el.classList.add('active');window.scrollTo({top:0,behavior:'instant'});requestAnimationFrame(initObs);}
+function toggleMenu(){const n=document.getElementById('mn');n.classList.toggle('open');document.querySelector('.mb').textContent=n.classList.contains('open')?'\u2715':'\u2630';}
+function closeMenu(){document.getElementById('mn').classList.remove('open');document.querySelector('.mb').textContent='\u2630';}
+function initObs(){const o=new IntersectionObserver(es=>{es.forEach((e,i)=>{if(e.isIntersecting)setTimeout(()=>e.target.classList.add('vis'),i*50);});},{threshold:.06});document.querySelectorAll('.fi:not(.vis)').forEach(el=>o.observe(el));}
+function openLb(s){document.getElementById('lb-img').src=s;document.getElementById('lb').classList.add('open');document.body.style.overflow='hidden';}
+function closeLb(){document.getElementById('lb').classList.remove('open');document.body.style.overflow='';}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeLb();});
+renderGrids();
+</script>
+</body>
+</html>
