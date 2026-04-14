@@ -12,9 +12,9 @@
  *     "content":  [
  *       { "type": "text",  "value": "A paragraph of text. HTML links allowed." },
  *       { "type": "text",  "value": "Another paragraph." },
- *       { "type": "video", "platform": "youtube", "videoId": "AJpuVTn_tPM" },
+ *       { "type": "video", "platform": "youtube", "videoId": "AJpuVTn_tPM", "caption": "Optional caption" },
  *       { "type": "video", "platform": "vimeo",   "videoId": "868215682" },
- *       { "type": "image", "src": "images/my-photo.jpg", "alt": "Description" }
+ *       { "type": "image", "src": "images/my-photo.jpg", "alt": "Description", "caption": "Photo credit" }
  *     ],
  *     "gallery": [
  *       "images/full_kzvn7mGF.jpg",
@@ -55,18 +55,19 @@ const R = [
 
 // --- Render a content block from a work's JSON ---
 function renderBlock(block) {
+  const cap = block.caption ? '<figcaption class="block-caption">' + block.caption + '</figcaption>' : '';
   switch (block.type) {
     case 'text':
       return '<p>' + block.value + '</p>';
     case 'video':
       if (block.platform === 'youtube') {
-        return '<div class="video-embed"><iframe src="https://www.youtube.com/embed/' + block.videoId + '" allowfullscreen></iframe></div>';
+        return '<figure class="block-fig"><div class="video-embed"><iframe src="https://www.youtube.com/embed/' + block.videoId + '" allowfullscreen></iframe></div>' + cap + '</figure>';
       } else if (block.platform === 'vimeo') {
-        return '<div class="video-embed"><iframe src="https://player.vimeo.com/video/' + block.videoId + '" allowfullscreen></iframe></div>';
+        return '<figure class="block-fig"><div class="video-embed"><iframe src="https://player.vimeo.com/video/' + block.videoId + '" allowfullscreen></iframe></div>' + cap + '</figure>';
       }
       return '';
     case 'image':
-      return '<img src="' + block.src + '" alt="' + (block.alt || '') + '" class="dt-img" loading="lazy" onclick="openLb(\'' + block.src + '\')" style="cursor:pointer;border-radius:3px;margin-bottom:1.2rem">';
+      return '<figure class="block-fig"><img src="' + block.src + '" alt="' + (block.alt || '') + '" class="dt-img" loading="lazy" onclick="openLb(\'' + block.src + '\')">' + cap + '</figure>';
     default:
       return '';
   }
