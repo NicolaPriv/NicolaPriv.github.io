@@ -26,5 +26,12 @@
       "value": "<strong>III. Identity</strong> — The longest and most articulated movement, developed after the first lockdown. The performer uses a specifically designed looper that juxtaposes the last four musical phrases as the score changes — a metaphor for how we develop our identities, combining chance, the pressure of society, and the compounding of our choices."
     }
   ],
-  "gallery": []
+  "gallery": [],
+  "_comment_paper": "To link a research paper, replace null with: {\"title\": \"Paper Title\", \"url\": \"papers/filename.pdf\"}",
+  "paper": {
+    "title": "W.E.I.R.D. Enters the Stage",
+    "url": "papers/egG5IeGb.pdf"
+  },
+  "_comment_links": "To add external links, add objects like: {\"label\": \"GitHub\", \"url\": \"https://...\"}",
+  "links": []
 }

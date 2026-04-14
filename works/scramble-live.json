@@ -10,5 +10,17 @@
       "value": "Complementary tool for Scramble. Runs trained models with higher interactive capabilities such as real-time analysis of direct MIDI input."
     }
   ],
-  "gallery": []
+  "gallery": [],
+  "_comment_paper": "To link a research paper, replace null with: {\"title\": \"Paper Title\", \"url\": \"papers/filename.pdf\"}",
+  "paper": {
+    "title": "Scramble Live: Combining LSTM and Markov Chains",
+    "url": "papers/zZTTogpc.pdf"
+  },
+  "_comment_links": "To add external links, add objects like: {\"label\": \"GitHub\", \"url\": \"https://...\"}",
+  "links": [
+    {
+      "label": "Download",
+      "url": "https://www.dropbox.com/sh/s89nq891rtqzq8o/AAC7xQpHhIeS4u-ug-3_r3pQa?dl=0"
+    }
+  ]
 }

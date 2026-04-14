@@ -17,5 +17,9 @@
     "images/full_9eaBSK8M.jpg",
     "images/full_qJIxe1LA.jpg",
     "images/full_K44I5IQa.jpg"
-  ]
+  ],
+  "_comment_paper": "To link a research paper, replace null with: {\"title\": \"Paper Title\", \"url\": \"papers/filename.pdf\"}",
+  "paper": null,
+  "_comment_links": "To add external links, add objects like: {\"label\": \"GitHub\", \"url\": \"https://...\"}",
+  "links": []
 }

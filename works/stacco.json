@@ -26,5 +26,12 @@
     "images/full_LAmxPAEw.jpg",
     "images/full_yfgFLfDk.jpg",
     "images/full_tls2G5LI.jpg"
-  ]
+  ],
+  "_comment_paper": "To link a research paper, replace null with: {\"title\": \"Paper Title\", \"url\": \"papers/filename.pdf\"}",
+  "paper": {
+    "title": "Stacco: Exploring the Embodied Perception of Latent Representations in Neural Synthesis",
+    "url": "papers/IQ8kf7lp.pdf"
+  },
+  "_comment_links": "To add external links, add objects like: {\"label\": \"GitHub\", \"url\": \"https://...\"}",
+  "links": []
 }

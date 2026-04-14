@@ -19,8 +19,17 @@
  *     "gallery": [
  *       "images/full_kzvn7mGF.jpg",
  *       "images/full_IXqFglGO.jpg"
+ *     ],
+ *     "paper": { "title": "Paper Title", "url": "papers/filename.pdf" },
+ *     "links": [
+ *       { "label": "GitHub", "url": "https://github.com/..." },
+ *       { "label": "Download", "url": "https://..." }
  *     ]
  *   }
+ *
+ * Notes:
+ *   - "paper": set to null if no paper; fill in to show a download link
+ *   - "links": set to [] if no links; add objects to show external buttons
  *
  * To add a new work:
  *   1. Create a new JSON file in works/ (e.g. works/my-new-work.json)
@@ -101,12 +110,27 @@ function openD(id) {
     }).join('') + '</div>';
   }
 
+  // Render paper link
+  let paperHtml = '';
+  if (w.paper && w.paper.title && w.paper.url) {
+    paperHtml = '<div class="dt-paper"><a href="' + w.paper.url + '" target="_blank">\u2193 ' + w.paper.title + '</a></div>';
+  }
+
+  // Render external links
+  let linksHtml = '';
+  if (w.links && w.links.length) {
+    linksHtml = '<div class="dt-links">' + w.links.map(l => {
+      return '<a href="' + l.url + '" target="_blank" class="btn">' + l.label + ' \u2197</a>';
+    }).join('') + '</div>';
+  }
+
   document.getElementById('dtC').innerHTML =
     '<a href="#" class="bk" onclick="goNav(\'home\');return false">\u2190 Back to Works</a>' +
     '<img class="hi2" src="' + w.image + '" alt="' + w.title + '">' +
     '<h2>' + w.title + '</h2>' +
     '<div class="mt">' + w.meta + '</div>' +
-    '<div class="bd">' + body + '</div>' + gl;
+    '<div class="bd">' + body + '</div>' +
+    paperHtml + linksHtml + gl;
 
   showPage('detail');
 }

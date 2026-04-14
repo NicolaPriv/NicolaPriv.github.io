@@ -10,5 +10,9 @@
       "value": "Named after an emoticon and an extinct Hawaiian bird. The last recording of its singing has been processed and multiplied by AI. Like Shelley's Creature, O_o looks for identity in its creator."
     }
   ],
-  "gallery": []
+  "gallery": [],
+  "_comment_paper": "To link a research paper, replace null with: {\"title\": \"Paper Title\", \"url\": \"papers/filename.pdf\"}",
+  "paper": null,
+  "_comment_links": "To add external links, add objects like: {\"label\": \"GitHub\", \"url\": \"https://...\"}",
+  "links": []
 }

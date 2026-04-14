@@ -10,5 +10,9 @@
       "value": "Emo is a graphic score controlled by an AI algorithm for emotion recognition, developed for a workshop with oncologic patients. The system analyses text, weights and represents each of the five basic emotions, producing an ever-shifting graphic score."
     }
   ],
-  "gallery": []
+  "gallery": [],
+  "_comment_paper": "To link a research paper, replace null with: {\"title\": \"Paper Title\", \"url\": \"papers/filename.pdf\"}",
+  "paper": null,
+  "_comment_links": "To add external links, add objects like: {\"label\": \"GitHub\", \"url\": \"https://...\"}",
+  "links": []
 }

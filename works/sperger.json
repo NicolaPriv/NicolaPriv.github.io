@@ -10,5 +10,9 @@
       "value": "With Darija Andzakovic and Natalia Duarte. We retraced Sperger's route from Trieste to Venice, recording soundscapes and using them to train and navigate a RAVE model — exploring the relationship between past and present musical technologies through a historically-informed approach."
     }
   ],
-  "gallery": []
+  "gallery": [],
+  "_comment_paper": "To link a research paper, replace null with: {\"title\": \"Paper Title\", \"url\": \"papers/filename.pdf\"}",
+  "paper": null,
+  "_comment_links": "To add external links, add objects like: {\"label\": \"GitHub\", \"url\": \"https://...\"}",
+  "links": []
 }

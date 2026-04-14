@@ -10,5 +10,9 @@
       "value": "Online artistic residency during the Covid pandemic. Sound events triggered by real-time tweets containing \"touch, free, fear\" — creating ambiguous and sometimes opposed meaning."
     }
   ],
-  "gallery": []
+  "gallery": [],
+  "_comment_paper": "To link a research paper, replace null with: {\"title\": \"Paper Title\", \"url\": \"papers/filename.pdf\"}",
+  "paper": null,
+  "_comment_links": "To add external links, add objects like: {\"label\": \"GitHub\", \"url\": \"https://...\"}",
+  "links": []
 }

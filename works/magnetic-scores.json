@@ -10,5 +10,12 @@
       "value": "Combining visual inscriptions with magnetic ones — scores that can be both read and haptically experienced through magnetic interactions."
     }
   ],
-  "gallery": []
+  "gallery": [],
+  "_comment_paper": "To link a research paper, replace null with: {\"title\": \"Paper Title\", \"url\": \"papers/filename.pdf\"}",
+  "paper": {
+    "title": "The Magnetic Score: Somatosensory Inscriptions and Relational Design",
+    "url": "papers/yiP1XP7E.pdf"
+  },
+  "_comment_links": "To add external links, add objects like: {\"label\": \"GitHub\", \"url\": \"https://...\"}",
+  "links": []
 }

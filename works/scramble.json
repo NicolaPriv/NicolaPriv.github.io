@@ -10,5 +10,17 @@
       "value": "ML software for real-time music generation from MIDI, combining LSTM Networks and Markov Chains."
     }
   ],
-  "gallery": []
+  "gallery": [],
+  "_comment_paper": "To link a research paper, replace null with: {\"title\": \"Paper Title\", \"url\": \"papers/filename.pdf\"}",
+  "paper": {
+    "title": "Scramble: A Creative Tool Combining LSTM and Markov Chains in Max",
+    "url": "papers/SWGRA7j4.pdf"
+  },
+  "_comment_links": "To add external links, add objects like: {\"label\": \"GitHub\", \"url\": \"https://...\"}",
+  "links": [
+    {
+      "label": "Download",
+      "url": "https://www.dropbox.com/sh/v869gify6pm6ta7/AAAcEjlWj-kIJ2VpyNfCWHN7a?dl=0"
+    }
+  ]
 }

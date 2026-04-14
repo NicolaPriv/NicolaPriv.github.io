@@ -18,5 +18,14 @@
     "images/full_puOhpcMq.jpg",
     "images/full_ylvIVLOv.jpg",
     "images/full_8G4ARR4a.jpg"
+  ],
+  "_comment_paper": "To link a research paper, replace null with: {\"title\": \"Paper Title\", \"url\": \"papers/filename.pdf\"}",
+  "paper": null,
+  "_comment_links": "To add external links, add objects like: {\"label\": \"GitHub\", \"url\": \"https://...\"}",
+  "links": [
+    {
+      "label": "Build your own on GitHub",
+      "url": "https://github.com/Intelligent-Instruments-Lab/Thales"
+    }
   ]
 }

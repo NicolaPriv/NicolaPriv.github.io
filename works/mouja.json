@@ -10,5 +10,12 @@
       "value": "A performance focusing on odd physical and temporal causalities — AI-based sonic reconfigurations where the dataset's sonic spectres are materialised through unpredictable magnetic interactions."
     }
   ],
-  "gallery": []
+  "gallery": [],
+  "_comment_paper": "To link a research paper, replace null with: {\"title\": \"Paper Title\", \"url\": \"papers/filename.pdf\"}",
+  "paper": {
+    "title": "Mouja",
+    "url": "papers/vPYCulwi.pdf"
+  },
+  "_comment_links": "To add external links, add objects like: {\"label\": \"GitHub\", \"url\": \"https://...\"}",
+  "links": []
 }

@@ -15,5 +15,12 @@
       "videoId": "Bt3O-jhSqiU"
     }
   ],
-  "gallery": []
+  "gallery": [],
+  "_comment_paper": "To link a research paper, replace null with: {\"title\": \"Paper Title\", \"url\": \"papers/filename.pdf\"}",
+  "paper": {
+    "title": "Sketching Magnetic Interactions for Neural Synthesis",
+    "url": "papers/btdMyOUI.pdf"
+  },
+  "_comment_links": "To add external links, add objects like: {\"label\": \"GitHub\", \"url\": \"https://...\"}",
+  "links": []
 }

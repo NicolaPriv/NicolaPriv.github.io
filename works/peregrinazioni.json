@@ -10,5 +10,9 @@
       "value": "Spatialized trombone and electronics. Improvisation over a Venetian traditional song. Grains of sound are delayed, inverted and spatialized using 16 boids controlled with an accelerometer mounted on the trombone."
     }
   ],
-  "gallery": []
+  "gallery": [],
+  "_comment_paper": "To link a research paper, replace null with: {\"title\": \"Paper Title\", \"url\": \"papers/filename.pdf\"}",
+  "paper": null,
+  "_comment_links": "To add external links, add objects like: {\"label\": \"GitHub\", \"url\": \"https://...\"}",
+  "links": []
 }
